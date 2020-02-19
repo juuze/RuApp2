@@ -1,0 +1,55 @@
+Arguments: 
+  /usr/bin/node /usr/share/yarn/bin/yarn.js add package.json
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+
+Yarn version: 
+  1.21.1
+
+Node version: 
+  12.16.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: connect ENETUNREACH 104.16.17.35:443 - Local (0.0.0.0:0)
+      at internalConnect (net.js:917:16)
+      at defaultTriggerAsyncIdScope (internal/async_hooks.js:311:12)
+      at emitLookup (net.js:1059:9)
+      at /usr/share/yarn/lib/cli.js:107440:28
+      at /usr/share/yarn/lib/cli.js:107349:13
+      at RawTask.module.exports.RawTask.call (/usr/share/yarn/lib/cli.js:83573:19)
+      at flush (/usr/share/yarn/lib/cli.js:83655:29)
+      at processTicksAndRejections (internal/process/task_queues.js:79:11)
+
+npm manifest: 
+  {
+    "main": "node_modules/expo/AppEntry.js",
+    "scripts": {
+      "start": "expo start",
+      "android": "expo start --android",
+      "ios": "expo start --ios",
+      "web": "expo start --web",
+      "eject": "expo eject"
+    },
+    "dependencies": {
+      "expo": "~36.0.0",
+      "react": "~16.9.0",
+      "react-dom": "~16.9.0",
+      "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
+      "react-native-web": "~0.11.7"
+    },
+    "devDependencies": {
+      "babel-preset-expo": "~8.0.0",
+      "@babel/core": "^7.0.0"
+    },
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
